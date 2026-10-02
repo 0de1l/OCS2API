@@ -1,0 +1,41 @@
+# Credentials and local runtime data
+.env
+.env.*
+!.env.example
+config.json
+question_bank.json
+config.*.tmp
+question_bank.*.tmp
+*.log
+logs/
+data/
+backups/
+exports/
+
+# Python environments and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Generated binaries and archives belong in GitHub Releases
+build/
+dist/
+release/
+*.exe
+*.zip
+
+# Local tools and editor files
+.omx/
+.codex/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini

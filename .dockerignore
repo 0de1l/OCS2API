@@ -1,0 +1,12 @@
+*
+!app.py
+!config.py
+!question_bank.py
+!utils.py
+!requirements.txt
+!api_docs.md
+!logo.png
+!static/
+!static/**
+!templates/
+!templates/index.html
