@@ -16,7 +16,7 @@ OCS2API 是基于 Flask 的本地题库与 AI 答题服务，为 [OCS](https://g
 
 ## Windows exe 使用
 
-1. 将自行构建或由维护者实际发布的 `OCS2API.exe` 放入有写权限的独立目录。构建产物为 `dist/OCS2API.exe`，当前不承诺已有可下载的 Release。
+1. 将自行构建或由维护者实际发布的 `OCS2API.exe` 放入有写权限的独立目录。构建产物为 `dist/OCS2API.exe`.
 2. 双击程序，浏览器通常会自动打开 `http://127.0.0.1:5000`。首次启动在 exe 同目录生成 `config.json` 和空的 `question_bank.json`。
 3. 在设置中填写上游 API Base URL、API Key 和模型名称并保存。默认 Key 为空；没有 Key 时仍可使用已导入的本地题库，未命中题库或缓存的请求会提示配置 Key。
 4. 在页面复制 OCS 配置，按下文添加到 OCS。更换端口后必须退出并重启程序，再从新地址打开页面并重新复制配置。
