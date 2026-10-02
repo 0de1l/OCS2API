@@ -14,7 +14,8 @@ class ServiceTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.directory = tempfile.TemporaryDirectory()
-        cls.root = Path(cls.directory.name)
+        # Match Config.DATA_DIR, including Windows 8.3 path expansion.
+        cls.root = Path(cls.directory.name).resolve()
         with patch.dict(os.environ, {"OCS2API_DATA_DIR": str(cls.root)}, clear=True):
             with patch("dotenv.load_dotenv"):
                 cls.config = importlib.import_module("config")
